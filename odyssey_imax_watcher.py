@@ -22,7 +22,7 @@ from pathlib import Path
 import requests
 
 PAGE_URL = "https://www.eventcinemas.com.au/cinema/imax-sydney/nowshowing"
-NTFY_TOPIC = os.environ.get("lawrence-odyssey-9f3k2", "CHANGE-ME-to-a-private-topic-name")
+NTFY_TOPIC = os.environ.get("NTFY_TOPIC", "lawrence-odyssey-9f3k2")
 STATE_FILE = Path(__file__).parent / "odyssey_imax_state.json"
 
 
